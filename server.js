@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongodb+srv://DWeems:canada1@cluster0.zbfxl.mongodb.net/Cluster0?retryWrites=true&w=majority
+mongodb+srv://DWeems:canada1@cluster0.zbfxl.mongodb.net/cluster0?retryWrites=true&w=majority
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
